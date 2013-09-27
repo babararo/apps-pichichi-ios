@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pichichi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link href="fonts/droid-sans.css" rel="stylesheet" type="text/css" />
+		<link href="fonts/droid-serif.css" rel="stylesheet" type="text/css" />
+		<link href="fonts/yanone-kaffeesatz.css" rel="stylesheet" type="text/css" />    
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/pichichi.css" rel="stylesheet" type="text/css" />
+		<link href="css/ipad.css" rel="stylesheet" type="text/css" media="only screen and (min-device-width: 768px)" />
+		<style>
+		* {
+			margin:0px; 
+			padding:0px; 
+    		-webkit-touch-callout: none !important;
+    		-webkit-user-select: none !important;
+    		overflow: hidden;
+		}
+		</style>
+    </head>
+    <body style="margin:0; padding:0; -webkit-touch-callout: none; -webkit-user-select: none;" onload="onBodyLoad()">
+        
+      <div class="app" id="container">
+  			<div id="header">
+  				<div id="logo">
+  					<h1>Pichichi y Zamora</h1>
+  					<h2>Liga española, temporada 2012/13</h2>
+  				</div>
+  			</div>
+        
+        	<br><br><br><br>
+        <div id="loading">
+        	<h1>Cargando...</h1>
+        </div>
+        
+        <div id="error" style="display:none;">
+        	<h3>No hay conexión a internet.</h3>
+        	<input id="reload" type="button" value="Volver a intentar" />
+       	</div>
+ 		  </div>
+	    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/pichichi.js"></script>
+      <script type="text/javascript">
+          app.initialize();
+      </script>
+    </body>
+</html>
